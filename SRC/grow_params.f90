@@ -27,12 +27,17 @@
    
    ! ----------- Array size parameters ----------------------------------
    integer, parameter :: nsta0=1000            !max number of stations
-   integer, parameter :: nq0=100000           !max number of quakes
-   integer, parameter :: npair0=1000000        !max total number of event pairs
-   integer, parameter :: ntmax=100000           !maximum number of trees (clusters), normally should be same as nq0
-   integer, parameter :: nbmax=100000           !max number of events (branches) per tree, should be of order nq0
+!   integer, parameter :: nq0=100000           !max number of quakes
+   integer, parameter :: nq0=200000           !max number of quakes
+!   integer, parameter :: npair0=1000000        !max total number of event pairs
+   integer, parameter :: npair0=75000000        !max total number of event pairs
+!   integer, parameter :: ntmax=100000           !maximum number of trees (clusters), normally should be same as nq0
+   integer, parameter :: ntmax=200000           !maximum number of trees (clusters), normally should be same as nq0
+!   integer, parameter :: nbmax=100000           !max number of events (branches) per tree, should be of order nq0
+   integer, parameter :: nbmax=200000           !max number of events (branches) per tree, should be of order nq0
    integer, parameter :: n0=1000              !max number of differential times for each event pair
-   integer, parameter :: ndif0=10000000        !max total number of differential times
+!   integer, parameter :: ndif0=10000000        !max total number of differential times
+   integer, parameter :: ndif0=171000000        !max total number of differential times
    integer, parameter :: n08 = 10000          !max number of diff. times for 10 event pairs
    integer, parameter :: maxboot = 100        ! max number of bootstrap resamples
    integer, parameter :: maxevid = 100000000 ! maximum event id number

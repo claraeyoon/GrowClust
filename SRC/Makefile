@@ -10,7 +10,8 @@ CMD = growclust
 #  (use -O for optimization)
 #  (use -O -mcmodel=medium or -O -mcmodel=large for large datasets - not sure if this works on M1 mac...)
 #  (use -fcheck=bounds for testing)
-CFLAGS = -O
+#CFLAGS = -O
+CFLAGS = -O3 -mcmodel=large
 #CFLAGS = -Wall -fcheck=bounds -mcmodel=medium
 
 # object files to link to command file
